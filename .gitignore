@@ -1,0 +1,12 @@
+# Media and drafts
+Materiais enviados/
+Depoimentos/
+deploy/
+landing_page_dra_bianca_nesso*.html
+name.png
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
