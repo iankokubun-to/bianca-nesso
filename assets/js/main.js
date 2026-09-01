@@ -47,4 +47,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Meta Pixel - Dispara evento Lead nos cliques de CTA
+    document.querySelectorAll('[data-gtm-event="Cliquewpp"]').forEach(el => {
+        el.addEventListener('click', () => {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', {
+                    content_name: el.dataset.gtmLabel || 'cta_click'
+                });
+            }
+        });
+    });
+
 });
